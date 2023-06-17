@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.22",
+    "toast": "^0.5.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "edumate_",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PriyanshuQ/Edumate_.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PriyanshuQ/Edumate_/issues"
+  },
+  "homepage": "https://github.com/PriyanshuQ/Edumate_#readme"
+}
