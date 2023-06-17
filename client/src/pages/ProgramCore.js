@@ -20,9 +20,7 @@ const Program = () => {
 
   const getallcourse = async () => {
     try {
-      let courses = await axios.get(
-        "http://localhost:5000/getcourses/?cate=programcore"
-      );
+      let courses = await axios.get("/getcourses/?cate=programcore");
       setCourses(courses.data.courses);
     } catch (error) {
       console.log(error.message);
@@ -40,7 +38,7 @@ const Program = () => {
           courses.map((data) => {
             return (
               <GridItem item lg={6} md={6} xs={12}>
-                <Dabba data={data}/>
+                <Dabba data={data} />
               </GridItem>
             );
           })

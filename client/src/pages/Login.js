@@ -9,7 +9,7 @@ function Login() {
   const navigate = useNavigate();
   const onFinish = async (values) => {
     try {
-      const response = await axios.post("http://localhost:5000/login", values);
+      const response = await axios.post("/login", values);
       console.log(response);
       if (response.data.success) {
         toast.success(response.data.message);

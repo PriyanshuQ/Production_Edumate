@@ -9,22 +9,18 @@ const Right = styled(Grid)`
   padding: 10px 10px;
   display: flex;
   flex-wrap: wrap;
-  
 `;
 
 const GridItem = styled(Grid)`
   margin-right: 10px;
-`
+`;
 
 const NaturalScience = () => {
-
   const [courses, setCourses] = useState([]);
 
   const getallcourse = async () => {
     try {
-      let courses = await axios.get(
-        "http://localhost:5000/getcourses/?cate=naturalscience"
-      );
+      let courses = await axios.get("/getcourses/?cate=naturalscience");
       setCourses(courses.data.courses);
     } catch (error) {
       console.log(error.message);
@@ -42,7 +38,7 @@ const NaturalScience = () => {
           courses.map((data) => {
             return (
               <GridItem item lg={6} md={6} xs={12}>
-                <Dabba data={data}/>
+                <Dabba data={data} />
               </GridItem>
             );
           })
@@ -51,7 +47,7 @@ const NaturalScience = () => {
         )}
       </Right>
     </div>
-  )
-}
+  );
+};
 
-export default NaturalScience
+export default NaturalScience;

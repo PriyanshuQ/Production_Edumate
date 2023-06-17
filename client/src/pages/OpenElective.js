@@ -9,22 +9,18 @@ const Right = styled(Grid)`
   padding: 10px 10px;
   display: flex;
   flex-wrap: wrap;
-  
 `;
 
 const GridItem = styled(Grid)`
   margin-right: 10px;
-`
+`;
 
 const OpenElective = () => {
-
   const [courses, setCourses] = useState([]);
 
   const getallcourse = async () => {
     try {
-      let courses = await axios.get(
-        "http://localhost:5000/getcourses/?cate=openelective"
-      );
+      let courses = await axios.get("/getcourses/?cate=openelective");
       setCourses(courses.data.courses);
     } catch (error) {
       console.log(error.message);
@@ -42,7 +38,7 @@ const OpenElective = () => {
           courses.map((data) => {
             return (
               <GridItem item lg={6} md={6} xs={12}>
-                <Dabba data={data}/>
+                <Dabba data={data} />
               </GridItem>
             );
           })
@@ -51,7 +47,7 @@ const OpenElective = () => {
         )}
       </Right>
     </div>
-  )
-}
+  );
+};
 
-export default OpenElective
+export default OpenElective;
