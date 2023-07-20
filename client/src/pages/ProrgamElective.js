@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const Right = styled(Grid)`
-  background: #ecf8f9;
+  background: #C38154;
   color: #e55807;
   padding: 10px 10px;
   display: flex;
@@ -12,7 +12,8 @@ const Right = styled(Grid)`
 `;
 
 const GridItem = styled(Grid)`
-  margin-right: 10px;
+  margin: auto;
+  margin-bottom: 20px;
 `;
 
 const ProrgamElective = () => {
