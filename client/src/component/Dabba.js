@@ -59,7 +59,7 @@ const Dabba = ({ data }) => {
           </Button>
           <Button size="small" variant="contained">
             <a href={data.data_link} target="_blank" style={{color:"#ffffff" , textDecoration:"none"}}>
-              Download
+              eBook
             </a>
           </Button>
         </CA>
